@@ -1,0 +1,8 @@
+
+data/
+
+evaluation/
+
+src/abbreviation_detector/Ab3P
+src/abbreviation_detector/NCBITextLib
+src/abbreviation_detector/data
