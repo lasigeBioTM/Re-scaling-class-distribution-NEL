@@ -1,12 +1,15 @@
 # REEL-NILINKER: Re-scaling class distribution for fine-tuning BERT-based models
 
-Named entity linking model for biomedical entities.
+Authors: Ghadeer Mobasher*, Pedro Ruas, Francisco M. Couto, Olga Krebs, Michael Gertz and Wolfgang Müller
 
-Instructions to replicate the results described in the article. 
+## Motive
+Biomedical pre-trained language models (BioPLMs) have been achieving state-of-the-art results for various biomedical text mining tasks. However, prevailing fine-tuning approaches naively train BioPLMs on targeted datasets without considering the class distributions. This is problematic, especially when dealing with imbalanced biomedical gold-standard datasets for named entity recognition (NER). Regardless of the high-performing state-of-the-art fine-tuned NER models, the training datasets include more "O" tags. Thus these models are biased towards "O" tags and misclassify biomedical entities ("B" & "I") tags. To fill the gap, we propose WELT, a cost-sensitive trainer that handles the class imbalance for the task of biomedical NER. We investigate the impact of WELT against the traditional fine-tuning approaches on mixed-domain and domain-specific BioPLMs. In addition, we examine the effect of handling the class imbalance on another downstream task which is named entity linking (NEL)
 
 ---------------------------------------------------------
 
 ## Summary
+This repository include instructions to replicate the results described in the article for the **Named Entity Linking** section. To replicate the **Named Entity Recognition** results, please access this [repository](https://github.com/mobashgr/Re-scaling-class-distribution-for-fine-tuning-BERT-based-models). 
+
 - [1. Setup](#1)
 - [2. Prepare files](#2)
 - [3. Running NEL Evaluation to obtain the results described in the article](#3)
